@@ -8,8 +8,7 @@ export interface ITaskProps {
 export function Task(props: ITaskProps) {
 
     return <VStack>
-        <Pressable onPress={props.onPress}>
-
+        <Pressable role="button" onPress={props.onPress}>
             <Text>
                 {props.name}
             </Text>

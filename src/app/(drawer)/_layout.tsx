@@ -1,7 +1,6 @@
 import { Drawer } from 'expo-router/drawer';
 import React from 'react';
 
-import { useColorScheme } from '@/hooks/useColorScheme';
 
 export default function TabLayout() {
   return (
@@ -12,18 +11,33 @@ export default function TabLayout() {
       <Drawer.Screen
         name="index"
         options={{
-          drawerLabel: 'User',
+          drawerLabel: 'Home',
           title: 'overview',
 
         }}
       />
       <Drawer.Screen
-        name="explore"
+        name="tasks"
         options={{
-          drawerLabel: 'User',
-          title: 'overview',
+          drawerLabel: 'Tasks',
+          title: 'Tasks',
         }}
       />
+      <Drawer.Screen
+        name="projects"
+        options={{
+          drawerLabel: 'Projects',
+          title: 'Projects',
+        }}
+      />
+      <Drawer.Screen
+        name="teams"
+        options={{
+          drawerLabel: 'Teams',
+          title: 'Teams',
+        }}
+      />
+
     </Drawer>
   );
 }
